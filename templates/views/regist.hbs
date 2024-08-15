@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Designed by CodingLab - youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Registration Form | CodingLab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="title">SIGN UP</div>
+    <div class="content">
+      <form action="/register" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="fullname" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Business Name</span>
+            <input type="text" name="businessname" placeholder="Enter your business name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phone" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Service</span>
+            <select name="service" required>
+              <option value="" disabled selected>Select The Required Service</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Web Maintenance">Web Maintenance</option>
+              <option value="Web Consultancy">Web Consultancy</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
