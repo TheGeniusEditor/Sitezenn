@@ -3,9 +3,8 @@ const path = require("path");
 const app = express();
 const hbs= require("hbs");
 require("./src/db/conn");
-require('dotenv').config();
 const User = require("./src/models/user");
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 const static_path = path.join(__dirname, "../public");
 const templates_path = path.join(__dirname, "../templates/views");
